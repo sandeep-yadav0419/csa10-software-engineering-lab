@@ -6,6 +6,9 @@ This function is not a complete authentication server.
 from werkzeug.security import check_password_hash, generate_password_hash
 
 def login(username, password, users):
+    # Invalid form values should fail authentication without raising an error.
+    if not isinstance(username, str) or not username or not isinstance(password, str) or not password:
+        return 'Invalid Credentials'
     stored=users.get(username)
     if stored and check_password_hash(stored,password):
         return 'Login Successful'

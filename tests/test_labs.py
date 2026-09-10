@@ -114,6 +114,14 @@ class FeatureTests(unittest.TestCase):
     def test_completion_percent(self):
         for done,total,expected in [(0,0,0.0),(0,5,0.0),(1,3,33.33),(5,5,100.0)]:
             self.assertEqual(feature.completion_percent(done,total),expected)
+    def test_login_rejects_empty_or_nontext_credentials(self):
+        for username,password in [('', 'temporary-test-password'),
+                                  (None, 'temporary-test-password'),
+                                  ([], 'temporary-test-password'),
+                                  ('admin', ''), ('admin', None),
+                                  ('admin', b'temporary-test-password')]:
+            with self.subTest(username=username, password_type=type(password).__name__):
+                self.assertEqual(login.login(username,password,self.users),'Invalid Credentials')
     def test_invalid_counts(self):
         for args in [(-1,2),(3,2),(0,-1)]:
             with self.assertRaises(ValueError):feature.completion_percent(*args)
