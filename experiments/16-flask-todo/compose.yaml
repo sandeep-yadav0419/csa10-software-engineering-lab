@@ -1,0 +1,8 @@
+services:
+  todo:
+    build: .
+    ports: ["127.0.0.1:5016:5000"]
+    volumes: ["todo-data:/data"]
+    restart: unless-stopped
+volumes:
+  todo-data:

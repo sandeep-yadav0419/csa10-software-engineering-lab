@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+*.db
+*.sqlite3
+*.pem
+*.key
+node_modules/
+.DS_Store
+.git-lab-work/
+evidence/runtime/
+!evidence/runtime/.gitkeep

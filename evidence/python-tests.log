@@ -1,0 +1,19 @@
+test_liveness_without_database (test_labs.BackendTests.test_liveness_without_database) ... ok
+test_status_contract_with_mock_database (test_labs.BackendTests.test_status_contract_with_mock_database) ... ok
+test_completion_percent (test_labs.FeatureTests.test_completion_percent) ... ok
+test_invalid_counts (test_labs.FeatureTests.test_invalid_counts) ... ok
+test_login (test_labs.FeatureTests.test_login) ... ok
+test_about_and_health (test_labs.FlaskEndpointTests.test_about_and_health) ... ok
+test_home_messages (test_labs.FlaskEndpointTests.test_home_messages) ... ok
+test_add_redirect_and_reload (test_labs.TodoTests.test_add_redirect_and_reload) ... ok
+test_complete_reopen_and_delete (test_labs.TodoTests.test_complete_reopen_and_delete) ... ok
+test_escape_html_and_parameterize_sql (test_labs.TodoTests.test_escape_html_and_parameterize_sql) ... ok
+test_health (test_labs.TodoTests.test_health) ... ok
+test_length_boundary (test_labs.TodoTests.test_length_boundary) ... ok
+test_missing_task_and_read_only_get (test_labs.TodoTests.test_missing_task_and_read_only_get) ... ok
+test_reject_blank_and_long_tasks (test_labs.TodoTests.test_reject_blank_and_long_tasks) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.337s
+
+OK

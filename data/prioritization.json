@@ -1,0 +1,208 @@
+{
+  "library": [
+    [
+      "LIB-01",
+      "Member authentication",
+      "Must Have",
+      "High",
+      "High",
+      "Protect borrowing records and librarian actions."
+    ],
+    [
+      "LIB-02",
+      "Search catalogue",
+      "Must Have",
+      "High",
+      "High",
+      "Readers need to locate books by title or author."
+    ],
+    [
+      "LIB-03",
+      "Issue a book",
+      "Must Have",
+      "High",
+      "High",
+      "Core borrowing transaction; check availability first."
+    ],
+    [
+      "LIB-04",
+      "Return a book",
+      "Must Have",
+      "High",
+      "High",
+      "Restore availability and close the loan."
+    ],
+    [
+      "LIB-05",
+      "Maintain book catalogue",
+      "Must Have",
+      "High",
+      "High",
+      "Librarian must add and update inventory."
+    ],
+    [
+      "LIB-06",
+      "View loan due dates",
+      "Must Have",
+      "High",
+      "High",
+      "Readers and staff need a clear return deadline."
+    ],
+    [
+      "LIB-07",
+      "Overdue reminders",
+      "Should Have",
+      "High",
+      "Medium",
+      "Reduces missed returns but borrowing can work without it."
+    ],
+    [
+      "LIB-08",
+      "Reserve unavailable books",
+      "Should Have",
+      "Medium",
+      "Medium",
+      "Improves access after core lending works."
+    ],
+    [
+      "LIB-09",
+      "Librarian reports",
+      "Should Have",
+      "Medium",
+      "High",
+      "Helps review circulation and overdue loans."
+    ],
+    [
+      "LIB-10",
+      "Book recommendations",
+      "Could Have",
+      "Medium",
+      "Medium",
+      "Discovery enhancement after core features."
+    ],
+    [
+      "LIB-11",
+      "Dark theme",
+      "Could Have",
+      "Low",
+      "High",
+      "Optional viewing preference."
+    ],
+    [
+      "LIB-12",
+      "Inter library lending",
+      "Won't Have",
+      "Medium",
+      "Low",
+      "Cross institution agreements exceed this release."
+    ]
+  ],
+  "task": [
+    [
+      "TASK-01",
+      "Create and edit tasks",
+      "Must Have",
+      "Must-be",
+      1,
+      "A task system cannot function without task capture."
+    ],
+    [
+      "TASK-02",
+      "Assign owners and deadlines",
+      "Must Have",
+      "Must-be",
+      2,
+      "Makes responsibility and due dates explicit."
+    ],
+    [
+      "TASK-03",
+      "Track task status",
+      "Must Have",
+      "Must-be",
+      3,
+      "Users need to see whether work is complete."
+    ],
+    [
+      "TASK-04",
+      "Deadline reminders",
+      "Should Have",
+      "One-dimensional",
+      4,
+      "More timely reminders improve satisfaction."
+    ],
+    [
+      "TASK-05",
+      "Search and filter tasks",
+      "Should Have",
+      "One-dimensional",
+      5,
+      "Faster retrieval is increasingly useful as task counts grow."
+    ],
+    [
+      "TASK-06",
+      "Suggested daily focus",
+      "Could Have",
+      "Attractive",
+      6,
+      "Optional suggestions can delight users after core delivery."
+    ],
+    [
+      "TASK-07",
+      "Decorative profile badges",
+      "Won't Have",
+      "Indifferent",
+      7,
+      "No assumed contribution to the current task workflow."
+    ]
+  ],
+  "learning": [
+    [
+      "LEARN-01",
+      "Register and sign in",
+      "Must Have",
+      "Must-be",
+      1,
+      "Required for learner identity and protected courses."
+    ],
+    [
+      "LEARN-02",
+      "Browse and enroll in courses",
+      "Must Have",
+      "Must-be",
+      2,
+      "Core path for joining a course."
+    ],
+    [
+      "LEARN-03",
+      "Play lessons and track progress",
+      "Must Have",
+      "Must-be",
+      3,
+      "Core learning experience and completion tracking."
+    ],
+    [
+      "LEARN-04",
+      "Quizzes with immediate feedback",
+      "Should Have",
+      "One-dimensional",
+      4,
+      "More useful feedback improves learning satisfaction."
+    ],
+    [
+      "LEARN-05",
+      "Personal learning recommendations",
+      "Could Have",
+      "Attractive",
+      5,
+      "Optional discovery benefit beyond core learning."
+    ],
+    [
+      "LEARN-06",
+      "Virtual reality classroom",
+      "Won't Have",
+      "Attractive",
+      6,
+      "Potential delight but beyond the current scope and budget."
+    ]
+  ]
+}

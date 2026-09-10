@@ -1,0 +1,8 @@
+ID,Requirement,MoSCoW,Kano,Rank,Justification
+TASK-01,Create and edit tasks,Must Have,Must-be,1,A task system cannot function without task capture.
+TASK-02,Assign owners and deadlines,Must Have,Must-be,2,Makes responsibility and due dates explicit.
+TASK-03,Track task status,Must Have,Must-be,3,Users need to see whether work is complete.
+TASK-04,Deadline reminders,Should Have,One-dimensional,4,More timely reminders improve satisfaction.
+TASK-05,Search and filter tasks,Should Have,One-dimensional,5,Faster retrieval is increasingly useful as task counts grow.
+TASK-06,Suggested daily focus,Could Have,Attractive,6,Optional suggestions can delight users after core delivery.
+TASK-07,Decorative profile badges,Won't Have,Indifferent,7,No assumed contribution to the current task workflow.

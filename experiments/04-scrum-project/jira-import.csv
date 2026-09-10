@@ -1,0 +1,6 @@
+Issue Type,Summary,Description,Priority
+Story,Member login,LIB-01; rank 1; estimate 3 story points. Acceptance: Valid member can sign in; invalid credentials are rejected.,Highest
+Story,Search catalogue,LIB-02; rank 2; estimate 3 story points. Acceptance: Search returns matching titles and an empty state for no matches.,Highest
+Story,Issue available book,LIB-03; rank 3; estimate 5 story points. Acceptance: Issue decrements availability; unavailable books cannot be issued.,Highest
+Story,Return borrowed book,LIB-04; rank 4; estimate 3 story points. Acceptance: Return closes the loan and restores availability exactly once.,Medium
+Story,View borrowing history,LIB-05; rank 5; estimate 2 story points. Acceptance: Member can see their own current and previous loans.,Medium

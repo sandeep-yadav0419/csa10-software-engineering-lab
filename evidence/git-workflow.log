@@ -1,0 +1,259 @@
+$ git init --bare --initial-branch=main origin.git
+Initialized empty Git repository in /tmp/csa10-git-lab-3k0d5e_z/origin.git/
+
+$ git clone /tmp/csa10-git-lab-3k0d5e_z/origin.git primary
+Cloning into 'primary'...
+warning: You appear to have cloned an empty repository.
+done.
+
+$ git config user.name Software Engineering Lab
+
+$ git config user.email lab@example.invalid
+
+$ git add .
+
+$ git commit -m Initialize repository and project description
+[main (root-commit) 8bab89a] Initialize repository and project description
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+ * [new branch]      main -> main
+
+$ git clone /tmp/csa10-git-lab-3k0d5e_z/origin.git second-workstation
+Cloning into 'second-workstation'...
+done.
+
+$ git config user.name Software Engineering Lab
+
+$ git config user.email lab@example.invalid
+
+$ git add .
+
+$ git commit -m Add update in second local checkout
+[main 8cc705f] Add update in second local checkout
+ 1 file changed, 1 insertion(+)
+
+$ git push origin main
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+   8bab89a..8cc705f  main -> main
+
+$ git pull --ff-only origin main
+Updating 8bab89a..8cc705f
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+From /tmp/csa10-git-lab-3k0d5e_z/origin
+ * branch            main       -> FETCH_HEAD
+   8bab89a..8cc705f  main       -> origin/main
+
+$ git checkout -b feature-branch
+Switched to a new branch 'feature-branch'
+
+$ git add .
+
+$ git commit -m Change mode on feature branch
+[feature-branch 142cd23] Change mode on feature branch
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+$ git push -u origin feature-branch
+branch 'feature-branch' set up to track 'origin/feature-branch'.
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+ * [new branch]      feature-branch -> feature-branch
+
+$ git checkout main
+Your branch is up to date with 'origin/main'.
+Switched to branch 'main'
+
+$ git add .
+
+$ git commit -m Change the same line on main
+[main 834ef62] Change the same line on main
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+$ git merge feature-branch
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git add .
+
+$ git commit -m Resolve merge conflict preserving both intentions
+[main 9de43fa] Resolve merge conflict preserving both intentions
+
+$ git ls-files -u
+
+$ git push origin main
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+   8cc705f..9de43fa  main -> main
+
+$ git checkout -b module1
+Switched to a new branch 'module1'
+
+$ git add .
+
+$ git commit -m Implement module1
+[module1 409220e] Implement module1
+ 1 file changed, 2 insertions(+)
+ create mode 100644 catalogue.py
+
+$ git push -u origin module1
+branch 'module1' set up to track 'origin/module1'.
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+ * [new branch]      module1 -> module1
+
+$ git checkout main
+Your branch is up to date with 'origin/main'.
+Switched to branch 'main'
+
+$ git merge --no-ff module1 -m Integrate module1 after local inspection
+Merge made by the 'ort' strategy.
+ catalogue.py | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 catalogue.py
+
+$ git checkout -b module2
+Switched to a new branch 'module2'
+
+$ git add .
+
+$ git commit -m Implement module2
+[module2 ba1e28a] Implement module2
+ 1 file changed, 2 insertions(+)
+ create mode 100644 loans.py
+
+$ git push -u origin module2
+branch 'module2' set up to track 'origin/module2'.
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+ * [new branch]      module2 -> module2
+
+$ git checkout main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+Switched to branch 'main'
+
+$ git merge --no-ff module2 -m Integrate module2 after local inspection
+Merge made by the 'ort' strategy.
+ loans.py | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 loans.py
+
+$ git checkout -b feature-login
+Switched to a new branch 'feature-login'
+
+$ git add .
+
+$ git commit -m Implement feature-login
+[feature-login f40572c] Implement feature-login
+ 1 file changed, 20 insertions(+)
+ create mode 100644 login.py
+
+$ git push -u origin feature-login
+branch 'feature-login' set up to track 'origin/feature-login'.
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+ * [new branch]      feature-login -> feature-login
+
+$ git checkout main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+Switched to branch 'main'
+
+$ git merge --no-ff feature-login -m Integrate feature-login after local inspection
+Merge made by the 'ort' strategy.
+ login.py | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+ create mode 100644 login.py
+
+$ git push origin main
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+   9de43fa..8e43f6e  main -> main
+
+$ git clone --bare /tmp/csa10-git-lab-3k0d5e_z/origin.git fork.git
+Cloning into bare repository 'fork.git'...
+done.
+
+$ git clone /tmp/csa10-git-lab-3k0d5e_z/fork.git fork-worktree
+Cloning into 'fork-worktree'...
+done.
+
+$ git config user.name Software Engineering Lab
+
+$ git config user.email lab@example.invalid
+
+$ git remote add upstream /tmp/csa10-git-lab-3k0d5e_z/origin.git
+
+$ git checkout -b feature-new
+Switched to a new branch 'feature-new'
+
+$ git add .
+
+$ git commit -m Add completion percentage feature
+[feature-new 4deae5d] Add completion percentage feature
+ 1 file changed, 7 insertions(+)
+ create mode 100644 feature.py
+
+$ git push -u origin feature-new
+branch 'feature-new' set up to track 'origin/feature-new'.
+To /tmp/csa10-git-lab-3k0d5e_z/fork.git
+ * [new branch]      feature-new -> feature-new
+
+$ git remote add contributor /tmp/csa10-git-lab-3k0d5e_z/fork.git
+
+$ git fetch contributor feature-new
+From /tmp/csa10-git-lab-3k0d5e_z/fork
+ * branch            feature-new -> FETCH_HEAD
+ * [new branch]      feature-new -> contributor/feature-new
+
+$ git diff main...contributor/feature-new
+diff --git a/feature.py b/feature.py
+new file mode 100644
+index 0000000..5fba375
+--- /dev/null
++++ b/feature.py
+@@ -0,0 +1,7 @@
++"""Small, independently testable feature for a fork contribution."""
++def completion_percent(done, total):
++    if not isinstance(done,int) or isinstance(done,bool) or not isinstance(total,int) or isinstance(total,bool):
++        raise TypeError('Task counts must be integers.')
++    if done<0 or total<0 or done>total:
++        raise ValueError('Require 0 <= done <= total.')
++    return round(100*done/total,2) if total else 0.0
+
+$ git merge --no-ff contributor/feature-new -m Integrate local fork feature
+Merge made by the 'ort' strategy.
+ feature.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 feature.py
+
+$ git push origin main
+To /tmp/csa10-git-lab-3k0d5e_z/origin.git
+   8e43f6e..1ab49f1  main -> main
+
+$ git log --graph --all --oneline --decorate
+*   1ab49f1 (HEAD -> main, origin/main) Integrate local fork feature
+|\  
+| * 4deae5d (contributor/feature-new) Add completion percentage feature
+|/  
+*   8e43f6e Integrate feature-login after local inspection
+|\  
+| * f40572c (origin/feature-login, feature-login) Implement feature-login
+|/  
+*   e6b5eac Integrate module2 after local inspection
+|\  
+| * ba1e28a (origin/module2, module2) Implement module2
+|/  
+*   29b2c07 Integrate module1 after local inspection
+|\  
+| * 409220e (origin/module1, module1) Implement module1
+|/  
+*   9de43fa Resolve merge conflict preserving both intentions
+|\  
+| * 142cd23 (origin/feature-branch, feature-branch) Change mode on feature branch
+* | 834ef62 Change the same line on main
+|/  
+* 8cc705f Add update in second local checkout
+* 8bab89a Initialize repository and project description
+
+$ git status --porcelain

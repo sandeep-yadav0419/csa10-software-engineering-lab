@@ -1,0 +1,8 @@
+Issue Type,Summary,Description,Priority,Labels
+Task,Create and edit tasks,TASK-01. A task system cannot function without task capture. Proposed MoSCoW: Must Have; proposed Kano: Must-be; order: 1.,Highest,must-have must-be
+Task,Assign owners and deadlines,TASK-02. Makes responsibility and due dates explicit. Proposed MoSCoW: Must Have; proposed Kano: Must-be; order: 2.,Highest,must-have must-be
+Task,Track task status,TASK-03. Users need to see whether work is complete. Proposed MoSCoW: Must Have; proposed Kano: Must-be; order: 3.,Highest,must-have must-be
+Task,Deadline reminders,TASK-04. More timely reminders improve satisfaction. Proposed MoSCoW: Should Have; proposed Kano: One-dimensional; order: 4.,Medium,should-have one-dimensional
+Task,Search and filter tasks,TASK-05. Faster retrieval is increasingly useful as task counts grow. Proposed MoSCoW: Should Have; proposed Kano: One-dimensional; order: 5.,Medium,should-have one-dimensional
+Task,Suggested daily focus,TASK-06. Optional suggestions can delight users after core delivery. Proposed MoSCoW: Could Have; proposed Kano: Attractive; order: 6.,Low,could-have attractive
+Task,Decorative profile badges,TASK-07. No assumed contribution to the current task workflow. Proposed MoSCoW: Won't Have; proposed Kano: Indifferent; order: 7.,Low,wont-have indifferent

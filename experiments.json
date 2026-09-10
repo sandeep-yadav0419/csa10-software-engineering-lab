@@ -1,0 +1,152 @@
+[
+  {
+    "number": 1,
+    "title": "Create a Kanban Board",
+    "tool": "Jira or Trello",
+    "path": "experiments/01-kanban-board"
+  },
+  {
+    "number": 2,
+    "title": "Bus Ticket Booking Prototype",
+    "tool": "Figma",
+    "path": "experiments/02-bus-booking-prototype"
+  },
+  {
+    "number": 3,
+    "title": "E Commerce Mobile App Prototype",
+    "tool": "Figma",
+    "path": "experiments/03-ecommerce-prototype"
+  },
+  {
+    "number": 4,
+    "title": "Scrum Project in Jira",
+    "tool": "Jira",
+    "path": "experiments/04-scrum-project"
+  },
+  {
+    "number": 5,
+    "title": "Library Management System MoSCoW",
+    "tool": "Excel",
+    "path": "experiments/05-library-moscow"
+  },
+  {
+    "number": 6,
+    "title": "Link Jira with Confluence",
+    "tool": "Jira and Confluence",
+    "path": "experiments/06-jira-confluence"
+  },
+  {
+    "number": 7,
+    "title": "Task Management System MoSCoW and Kano",
+    "tool": "Jira",
+    "path": "experiments/07-task-prioritization"
+  },
+  {
+    "number": 8,
+    "title": "Online Learning Platform MoSCoW and Kano",
+    "tool": "Jira",
+    "path": "experiments/08-learning-prioritization"
+  },
+  {
+    "number": 9,
+    "title": "Fork and Pull Request Workflow",
+    "tool": "Git and GitHub",
+    "path": "experiments/09-fork-pull-request"
+  },
+  {
+    "number": 10,
+    "title": "Git Branching and Merge Conflict",
+    "tool": "Git and GitHub",
+    "path": "experiments/10-merge-conflict"
+  },
+  {
+    "number": 11,
+    "title": "Static Website with Docker",
+    "tool": "Docker and Nginx",
+    "path": "experiments/11-static-docker"
+  },
+  {
+    "number": 12,
+    "title": "Flask API with Docker and Kubernetes",
+    "tool": "Flask Docker Kubernetes",
+    "path": "experiments/12-flask-kubernetes"
+  },
+  {
+    "number": 13,
+    "title": "CI CD using Jenkins",
+    "tool": "Jenkins and Docker",
+    "path": "experiments/13-jenkins-pipeline"
+  },
+  {
+    "number": 14,
+    "title": "Continuous Deployment with GitHub Actions",
+    "tool": "GitHub Actions and Docker",
+    "path": "experiments/14-github-actions-docker"
+  },
+  {
+    "number": 15,
+    "title": "GitHub Version Control",
+    "tool": "Git and GitHub",
+    "path": "experiments/15-version-control"
+  },
+  {
+    "number": 16,
+    "title": "Containerize Flask To Do App",
+    "tool": "Flask and Docker",
+    "path": "experiments/16-flask-todo"
+  },
+  {
+    "number": 17,
+    "title": "Push and Pull Docker Image",
+    "tool": "Docker Hub",
+    "path": "experiments/17-docker-push-pull"
+  },
+  {
+    "number": 18,
+    "title": "Multi Container App with Kubernetes",
+    "tool": "Nginx Flask MySQL Kubernetes",
+    "path": "experiments/18-multi-container-kubernetes"
+  },
+  {
+    "number": 19,
+    "title": "CI CD with GitHub Actions",
+    "tool": "GitHub Actions Docker and EC2",
+    "path": "experiments/19-flask-cicd"
+  },
+  {
+    "number": 20,
+    "title": "Create GitHub Repository",
+    "tool": "GitHub",
+    "path": "experiments/20-create-repository"
+  },
+  {
+    "number": 21,
+    "title": "Clone and Modify Repository",
+    "tool": "Git",
+    "path": "experiments/21-clone-modify"
+  },
+  {
+    "number": 22,
+    "title": "Commit and Push Changes",
+    "tool": "Git and GitHub",
+    "path": "experiments/22-commit-push"
+  },
+  {
+    "number": 23,
+    "title": "Pull Latest Changes",
+    "tool": "Git and GitHub",
+    "path": "experiments/23-pull-changes"
+  },
+  {
+    "number": 24,
+    "title": "Create feature login Branch",
+    "tool": "Python Git and GitHub",
+    "path": "experiments/24-feature-login"
+  },
+  {
+    "number": 25,
+    "title": "Fork and Implement Feature",
+    "tool": "Git and GitHub",
+    "path": "experiments/25-fork-feature"
+  }
+]

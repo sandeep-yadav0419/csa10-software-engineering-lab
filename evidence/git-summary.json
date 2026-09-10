@@ -1,0 +1,27 @@
+{
+  "executed_at": "2026-09-09T15:23:52.556900+00:00",
+  "environment": "disposable local Git repositories",
+  "verified": [
+    "init",
+    "clone",
+    "modify",
+    "commit",
+    "push",
+    "pull",
+    "module branches",
+    "feature-login",
+    "conflict detection",
+    "conflict resolution",
+    "non-fast-forward merges",
+    "local fork feature"
+  ],
+  "not_performed": [
+    "GitHub fork",
+    "GitHub pull request",
+    "human peer review"
+  ],
+  "conflict_observed": true,
+  "working_tree_clean": true,
+  "head": "1ab49f1be39cb7b30fade9d57a200d1d1ddc5450",
+  "workspace": "/tmp/csa10-git-lab-3k0d5e_z"
+}

@@ -1,0 +1,7 @@
+ID,Requirement,MoSCoW,Kano,Rank,Justification
+LEARN-01,Register and sign in,Must Have,Must-be,1,Required for learner identity and protected courses.
+LEARN-02,Browse and enroll in courses,Must Have,Must-be,2,Core path for joining a course.
+LEARN-03,Play lessons and track progress,Must Have,Must-be,3,Core learning experience and completion tracking.
+LEARN-04,Quizzes with immediate feedback,Should Have,One-dimensional,4,More useful feedback improves learning satisfaction.
+LEARN-05,Personal learning recommendations,Could Have,Attractive,5,Optional discovery benefit beyond core learning.
+LEARN-06,Virtual reality classroom,Won't Have,Attractive,6,Potential delight but beyond the current scope and budget.

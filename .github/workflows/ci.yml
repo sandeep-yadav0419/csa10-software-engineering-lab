@@ -1,0 +1,65 @@
+name: Validate software engineering labs
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-dev.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/validate_assets.py
+      - run: python scripts/git_lab.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: git-lab-evidence
+          path: evidence/runtime/
+  containers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - context: experiments/11-static-docker
+            port: 80
+          - context: experiments/12-flask-kubernetes
+            port: 5000
+          - context: experiments/13-jenkins-pipeline
+            port: 5000
+          - context: experiments/14-github-actions-docker
+            port: 5000
+          - context: experiments/16-flask-todo
+            port: 5000
+          - context: experiments/17-docker-push-pull
+            port: 80
+          - context: experiments/18-multi-container-kubernetes/backend
+            port: 5000
+          - context: experiments/19-flask-cicd
+            port: 5000
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        env:
+          CONTEXT: ${{ matrix.context }}
+        run: docker build -t lab-test "$CONTEXT"
+      - name: Run and verify HTTP response
+        env:
+          APP_PORT: ${{ matrix.port }}
+        run: |
+          set -eu
+          docker run -d --name lab-test -p "127.0.0.1:8099:$APP_PORT" lab-test
+          trap 'docker logs lab-test; docker rm -f lab-test' EXIT
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://127.0.0.1:8099/; then exit 0; fi
+            sleep 1
+          done
+          exit 1

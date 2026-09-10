@@ -1,0 +1,41 @@
+name: Deploy published Flask lab on a dedicated host
+on:
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        description: Published commit SHA or image tag
+        required: true
+        default: latest
+permissions:
+  contents: read
+concurrency:
+  group: deploy-flask-lab
+  cancel-in-progress: false
+jobs:
+  deploy:
+    if: vars.DEPLOY_ENABLED == 'true'
+    runs-on: [self-hosted, linux, se-lab]
+    environment: lab
+    timeout-minutes: 10
+    steps:
+      - name: Pull and replace this lab container
+        env:
+          DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_TOKEN: ${{ secrets.DOCKER_PASSWORD }}
+          IMAGE_TAG: ${{ inputs.image_tag }}
+        run: |
+          set -eu
+          case "$IMAGE_TAG" in *[!a-zA-Z0-9_.-]*|'') echo 'Invalid image tag'; exit 1;; esac
+          export DOCKER_CONFIG=$(mktemp -d)
+          trap 'rm -rf "$DOCKER_CONFIG"' EXIT
+          printf '%s' "$DOCKER_TOKEN" | docker login -u "$DOCKER_USER" --password-stdin
+          image="$DOCKER_USER/csa10-flask-cicd:$IMAGE_TAG"
+          docker pull "$image"
+          docker rm -f csa10-flask-lab 2>/dev/null || true
+          docker run -d --restart unless-stopped --name csa10-flask-lab -p 127.0.0.1:5019:5000 "$image"
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://127.0.0.1:5019/health; then exit 0; fi
+            sleep 1
+          done
+          docker logs csa10-flask-lab
+          exit 1

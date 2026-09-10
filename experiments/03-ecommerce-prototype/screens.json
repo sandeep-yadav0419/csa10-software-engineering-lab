@@ -1,0 +1,1340 @@
+[
+  {
+    "id": "a-home",
+    "title": "Campus essentials",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP A",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Campus essentials",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "Variant A · compact product grid",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 209,
+        "w": 342,
+        "h": 85,
+        "color": "#304357",
+        "radius": 14
+      },
+      {
+        "type": "text",
+        "x": 42,
+        "y": 233,
+        "text": "Study essentials",
+        "size": 24,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 42,
+        "y": 268,
+        "text": "Thoughtful basics for college.",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 321,
+        "w": 164,
+        "h": 184,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 202,
+        "y": 321,
+        "w": 164,
+        "h": 184,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 74,
+        "y": 343,
+        "w": 62,
+        "h": 72,
+        "color": "#d1b38e",
+        "radius": 4
+      },
+      {
+        "type": "rect",
+        "x": 255,
+        "y": 343,
+        "w": 58,
+        "h": 72,
+        "color": "#a2bbd5",
+        "radius": 4
+      },
+      {
+        "type": "text",
+        "x": 38,
+        "y": 433,
+        "text": "Grid notebook",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 38,
+        "y": 467,
+        "text": "₹249",
+        "size": 18,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 216,
+        "y": 433,
+        "text": "Daily planner",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 216,
+        "y": 467,
+        "text": "₹299",
+        "size": 18,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 656,
+        "w": 342,
+        "h": 54,
+        "text": "View grid notebook",
+        "to": "a-product",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "a-product",
+    "title": "Grid notebook",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP A",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Grid notebook",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "Make space for your next idea.",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 214,
+        "w": 342,
+        "h": 222,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 144,
+        "y": 242,
+        "w": 104,
+        "h": 166,
+        "color": "#d1b38e",
+        "radius": 5
+      },
+      {
+        "type": "text",
+        "x": 155,
+        "y": 315,
+        "text": "NOTES",
+        "size": 16,
+        "color": "#27334b",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 470,
+        "text": "₹249",
+        "size": 30,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 517,
+        "text": "A5 · 160 pages · dotted grid",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 557,
+        "text": "One notebook. Sample product.",
+        "size": 14,
+        "color": "#b8c4d6",
+        "weight": "Regular"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 641,
+        "w": 342,
+        "h": 54,
+        "text": "Add to cart",
+        "to": "a-cart",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 711,
+        "w": 342,
+        "h": 54,
+        "text": "Back to products",
+        "to": "a-home",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "a-cart",
+    "title": "Your cart",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP A",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Your cart",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "Review before checkout.",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 214,
+        "w": 342,
+        "h": 134,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 43,
+        "y": 236,
+        "w": 49,
+        "h": 83,
+        "color": "#d1b38e",
+        "radius": 4
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 239,
+        "text": "Grid notebook",
+        "size": 20,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 280,
+        "text": "Quantity 1",
+        "size": 15,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 312,
+        "text": "₹249",
+        "size": 18,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 405,
+        "text": "Subtotal",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 297,
+        "y": 405,
+        "text": "₹249",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 448,
+        "text": "Delivery",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 315,
+        "y": 448,
+        "text": "₹0",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 505,
+        "text": "Total",
+        "size": 24,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 285,
+        "y": 505,
+        "text": "₹249",
+        "size": 24,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 641,
+        "w": 342,
+        "h": 54,
+        "text": "Continue to checkout",
+        "to": "a-checkout",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 711,
+        "w": 342,
+        "h": 54,
+        "text": "Continue shopping",
+        "to": "a-home",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "a-checkout",
+    "title": "Checkout",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP A",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Checkout",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "A sample order for design review.",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 214,
+        "w": 342,
+        "h": 169,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "text",
+        "x": 43,
+        "y": 243,
+        "text": "ORDER SUMMARY",
+        "size": 12,
+        "color": "#b9c9dd",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 43,
+        "y": 280,
+        "text": "Grid notebook × 1",
+        "size": 20,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 43,
+        "y": 330,
+        "text": "Total ₹249 · delivery included",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 422,
+        "text": "Payment method",
+        "size": 20,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 463,
+        "text": "Demo checkout",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 507,
+        "text": "No order or payment will be created.",
+        "size": 14,
+        "color": "#bbd5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 641,
+        "w": 342,
+        "h": 54,
+        "text": "Finish demo order",
+        "to": "a-home",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 711,
+        "w": 342,
+        "h": 54,
+        "text": "Back to cart",
+        "to": "a-cart",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "b-home",
+    "title": "Campus essentials",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP B",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Campus essentials",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "Variant B · clear product list",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 209,
+        "w": 342,
+        "h": 85,
+        "color": "#304357",
+        "radius": 14
+      },
+      {
+        "type": "text",
+        "x": 42,
+        "y": 233,
+        "text": "Study essentials",
+        "size": 24,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 42,
+        "y": 268,
+        "text": "Thoughtful basics for college.",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 321,
+        "w": 342,
+        "h": 93,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 40,
+        "y": 338,
+        "w": 47,
+        "h": 55,
+        "color": "#d1b38e",
+        "radius": 4
+      },
+      {
+        "type": "text",
+        "x": 105,
+        "y": 341,
+        "text": "Grid notebook",
+        "size": 20,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 105,
+        "y": 379,
+        "text": "₹249 · A5 · 160 pages",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 435,
+        "w": 342,
+        "h": 93,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 40,
+        "y": 452,
+        "w": 47,
+        "h": 55,
+        "color": "#a2bbd5",
+        "radius": 4
+      },
+      {
+        "type": "text",
+        "x": 105,
+        "y": 455,
+        "text": "Daily planner",
+        "size": 20,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 105,
+        "y": 493,
+        "text": "₹299 · Undated",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 656,
+        "w": 342,
+        "h": 54,
+        "text": "View grid notebook",
+        "to": "b-product",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "b-product",
+    "title": "Grid notebook",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP B",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Grid notebook",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "Make space for your next idea.",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 214,
+        "w": 342,
+        "h": 222,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 144,
+        "y": 242,
+        "w": 104,
+        "h": 166,
+        "color": "#d1b38e",
+        "radius": 5
+      },
+      {
+        "type": "text",
+        "x": 155,
+        "y": 315,
+        "text": "NOTES",
+        "size": 16,
+        "color": "#27334b",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 470,
+        "text": "₹249",
+        "size": 30,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 517,
+        "text": "A5 · 160 pages · dotted grid",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 557,
+        "text": "One notebook. Sample product.",
+        "size": 14,
+        "color": "#b8c4d6",
+        "weight": "Regular"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 641,
+        "w": 342,
+        "h": 54,
+        "text": "Add to cart",
+        "to": "b-cart",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 711,
+        "w": 342,
+        "h": 54,
+        "text": "Back to products",
+        "to": "b-home",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "b-cart",
+    "title": "Your cart",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP B",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Your cart",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "Review before checkout.",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 214,
+        "w": 342,
+        "h": 134,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "rect",
+        "x": 43,
+        "y": 236,
+        "w": 49,
+        "h": 83,
+        "color": "#d1b38e",
+        "radius": 4
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 239,
+        "text": "Grid notebook",
+        "size": 20,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 280,
+        "text": "Quantity 1",
+        "size": 15,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 312,
+        "text": "₹249",
+        "size": 18,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 405,
+        "text": "Subtotal",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 297,
+        "y": 405,
+        "text": "₹249",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 448,
+        "text": "Delivery",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 315,
+        "y": 448,
+        "text": "₹0",
+        "size": 17,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 505,
+        "text": "Total",
+        "size": 24,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 285,
+        "y": 505,
+        "text": "₹249",
+        "size": 24,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 641,
+        "w": 342,
+        "h": 54,
+        "text": "Continue to checkout",
+        "to": "b-checkout",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 711,
+        "w": 342,
+        "h": 54,
+        "text": "Continue shopping",
+        "to": "b-home",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "b-checkout",
+    "title": "Checkout",
+    "width": 390,
+    "height": 844,
+    "items": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 844,
+        "color": "#10192a",
+        "radius": 0
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 24,
+        "text": "9:41",
+        "size": 14,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 294,
+        "y": 24,
+        "text": "5G   100%",
+        "size": 12,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 83,
+        "text": "CSA10  /  SHOP B",
+        "size": 12,
+        "color": "#95bfff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 119,
+        "text": "Checkout",
+        "size": 28,
+        "color": "#ffffff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 162,
+        "text": "A sample order for design review.",
+        "size": 14,
+        "color": "#b7c6df",
+        "weight": "Regular"
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 214,
+        "w": 342,
+        "h": 169,
+        "color": "#202e47",
+        "radius": 14
+      },
+      {
+        "type": "text",
+        "x": 43,
+        "y": 243,
+        "text": "ORDER SUMMARY",
+        "size": 12,
+        "color": "#b9c9dd",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 43,
+        "y": 280,
+        "text": "Grid notebook × 1",
+        "size": 20,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 43,
+        "y": 330,
+        "text": "Total ₹249 · delivery included",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 422,
+        "text": "Payment method",
+        "size": 20,
+        "color": "#fff",
+        "weight": "Bold"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 463,
+        "text": "Demo checkout",
+        "size": 16,
+        "color": "#f2f5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 507,
+        "text": "No order or payment will be created.",
+        "size": 14,
+        "color": "#bbd5ff",
+        "weight": "Regular"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 641,
+        "w": 342,
+        "h": 54,
+        "text": "Finish demo order",
+        "to": "b-home",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "button",
+        "x": 24,
+        "y": 711,
+        "w": 342,
+        "h": 54,
+        "text": "Back to cart",
+        "to": "b-cart",
+        "color": "#bbd5ff"
+      },
+      {
+        "type": "text",
+        "x": 24,
+        "y": 794,
+        "text": "Interactive lab prototype · sample data",
+        "size": 12,
+        "color": "#93a3bd",
+        "weight": "Regular"
+      }
+    ]
+  }
+]

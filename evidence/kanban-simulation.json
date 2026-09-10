@@ -1,0 +1,60 @@
+{
+  "kind": "local simulation, not Jira or Trello execution",
+  "board": {
+    "title": "Library Management Kanban",
+    "columns": [
+      "To Do",
+      "In Progress",
+      "Done"
+    ],
+    "tasks": [
+      {
+        "id": "KAN-01",
+        "title": "Write the library problem statement",
+        "status": "Done"
+      },
+      {
+        "id": "KAN-02",
+        "title": "Design the catalogue search screen",
+        "status": "Done"
+      },
+      {
+        "id": "KAN-03",
+        "title": "Test the issue and return workflow",
+        "status": "Done"
+      }
+    ]
+  },
+  "transitions": [
+    {
+      "task": "KAN-01",
+      "from": "To Do",
+      "to": "In Progress"
+    },
+    {
+      "task": "KAN-01",
+      "from": "In Progress",
+      "to": "Done"
+    },
+    {
+      "task": "KAN-02",
+      "from": "To Do",
+      "to": "In Progress"
+    },
+    {
+      "task": "KAN-02",
+      "from": "In Progress",
+      "to": "Done"
+    },
+    {
+      "task": "KAN-03",
+      "from": "To Do",
+      "to": "In Progress"
+    },
+    {
+      "task": "KAN-03",
+      "from": "In Progress",
+      "to": "Done"
+    }
+  ]
+}

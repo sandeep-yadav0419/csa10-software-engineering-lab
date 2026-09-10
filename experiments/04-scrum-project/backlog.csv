@@ -1,0 +1,6 @@
+ID,Summary,Rank,Story Points,Acceptance Criteria
+LIB-01,Member login,1,3,Valid member can sign in; invalid credentials are rejected.
+LIB-02,Search catalogue,2,3,Search returns matching titles and an empty state for no matches.
+LIB-03,Issue available book,3,5,Issue decrements availability; unavailable books cannot be issued.
+LIB-04,Return borrowed book,4,3,Return closes the loan and restores availability exactly once.
+LIB-05,View borrowing history,5,2,Member can see their own current and previous loans.

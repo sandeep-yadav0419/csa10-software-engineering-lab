@@ -1,0 +1,13 @@
+ID,Requirement,MoSCoW,Impact,Feasibility,Justification
+LIB-01,Member authentication,Must Have,High,High,Protect borrowing records and librarian actions.
+LIB-02,Search catalogue,Must Have,High,High,Readers need to locate books by title or author.
+LIB-03,Issue a book,Must Have,High,High,Core borrowing transaction; check availability first.
+LIB-04,Return a book,Must Have,High,High,Restore availability and close the loan.
+LIB-05,Maintain book catalogue,Must Have,High,High,Librarian must add and update inventory.
+LIB-06,View loan due dates,Must Have,High,High,Readers and staff need a clear return deadline.
+LIB-07,Overdue reminders,Should Have,High,Medium,Reduces missed returns but borrowing can work without it.
+LIB-08,Reserve unavailable books,Should Have,Medium,Medium,Improves access after core lending works.
+LIB-09,Librarian reports,Should Have,Medium,High,Helps review circulation and overdue loans.
+LIB-10,Book recommendations,Could Have,Medium,Medium,Discovery enhancement after core features.
+LIB-11,Dark theme,Could Have,Low,High,Optional viewing preference.
+LIB-12,Inter library lending,Won't Have,Medium,Low,Cross institution agreements exceed this release.

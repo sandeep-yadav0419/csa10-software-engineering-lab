@@ -1,0 +1,32 @@
+pipeline {
+  agent { label 'docker' }
+  options { disableConcurrentBuilds(); timestamps(); timeout(time: 15, unit: 'MINUTES') }
+  environment { IMAGE = 'se-lab/jenkins-app'; CONTEXT = 'experiments/13-jenkins-pipeline' }
+  stages {
+    stage('Checkout') { steps { checkout scm } }
+    stage('Build') { steps { sh 'docker build -t "$IMAGE:$BUILD_NUMBER" "$CONTEXT"' } }
+    stage('Test') {
+      steps {
+        sh '''
+          docker run --rm "$IMAGE:$BUILD_NUMBER" python -c "from app import app; c=app.test_client(); assert c.get('/').status_code==200; assert c.get('/health').json['status']=='ok'"
+        '''
+      }
+    }
+    stage('Deploy to lab agent') {
+      steps {
+        sh '''
+          set -eu
+          docker rm -f se-lab-jenkins-app 2>/dev/null || true
+          docker run -d --name se-lab-jenkins-app --restart unless-stopped -p 127.0.0.1:5013:5000 "$IMAGE:$BUILD_NUMBER"
+          for attempt in 1 2 3 4 5 6; do
+            if curl --fail --silent http://127.0.0.1:5013/health; then exit 0; fi
+            sleep 2
+          done
+          docker logs se-lab-jenkins-app
+          exit 1
+        '''
+      }
+    }
+  }
+  post { always { echo 'Inspect the stage result and console output for execution evidence.' } }
+}

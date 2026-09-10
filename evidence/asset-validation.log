@@ -1,0 +1,2 @@
+25 experiments checked; prototype links, Kubernetes selectors and ports, YAML and shell syntax passed.
+Configuration checks do not assert that external services or containers have run.
