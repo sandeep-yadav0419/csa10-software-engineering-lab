@@ -15,6 +15,6 @@ The corrected application returns `CI/CD Pipeline Updated Successfully!`. Workfl
 5. Run `docker run --rm -p 127.0.0.1:5014:5000 YOUR_DOCKER_USER/csa10-actions-app:TAG`.
 6. Record the response, workflow URL and image tag.
 
-Observed: source, tests and workflows are prepared. Registry publication requires configuration. Publishing an image alone does not start a deployed application.
+Observed: hosted tests passed; GitHub Actions built the image, started it, and verified its HTTP response. Docker Hub publication was intentionally skipped because its credentials and enable variable were not supplied. Publishing an image alone does not start a deployed application.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

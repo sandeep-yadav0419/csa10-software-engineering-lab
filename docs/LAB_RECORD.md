@@ -169,7 +169,7 @@ docker ps --filter name=csa10-static
 
 Open the page and capture it with the running container. If port 8080 is busy, map `127.0.0.1:8011:80` and use port 8011. Stop this container using `docker stop csa10-static`; remove that stopped container before reusing the name.
 
-Expected: the page responds through Nginx. Observed: HTML and Dockerfile are prepared. Docker execution is pending because Docker is absent here.
+Result: GitHub Actions built the Nginx image, ran it, and received a successful HTTP response. A manual browser screenshot is still needed only if required for the submitted record.
 
 ## Experiment 12 Flask API with Docker and Kubernetes
 
@@ -184,7 +184,7 @@ The API exposes `/`, `/about` and `/health`. The Deployment uses two replicas an
 5. Portable alternative: `kubectl port-forward service/flask-api-service 5012:5000`, then browse port 5012.
 6. Capture both endpoints, two Ready pods and the service output.
 
-Observed: endpoint tests and manifest checks passed. Actual container and cluster execution are pending. Local image names must be published/replaced for a remote cluster.
+Observed: endpoint and manifest checks passed, and GitHub Actions built and served the Docker image successfully. An actual Kubernetes rollout, two-Ready-pod evidence, and NodePort/port-forward capture remain pending. Local image names must be published or replaced for a remote cluster.
 
 ## Experiment 13 CI CD using Jenkins
 
@@ -200,7 +200,7 @@ Read `agent-setup.md` and configure a Pipeline from SCM job to use this experime
 6. Browse agent loopback port 5013, using an SSH tunnel if needed.
 7. Save the real stage view, console output and app screenshot.
 
-Observed: source and endpoint tests are ready. A Jenkins server and Docker agent are required for the actual pipeline run. A plain Jenkins controller container does not supply a Docker daemon.
+Observed: source tests passed, and GitHub Actions built and served this Docker image successfully. A Jenkins server and Docker agent are still required for the literal Jenkins pipeline run. A plain Jenkins controller container does not supply a Docker daemon.
 
 ## Experiment 14 Continuous Deployment with GitHub Actions
 
@@ -215,7 +215,7 @@ The corrected application returns `CI/CD Pipeline Updated Successfully!`. Workfl
 5. Run `docker run --rm -p 127.0.0.1:5014:5000 YOUR_DOCKER_USER/csa10-actions-app:TAG`.
 6. Record the response, workflow URL and image tag.
 
-Observed: source, tests and workflows are prepared. Registry publication requires configuration. Publishing an image alone does not start a deployed application.
+Observed: hosted tests passed; GitHub Actions built the image, started it, and verified its HTTP response. Docker Hub publication was intentionally skipped because its credentials and enable variable were not supplied. Publishing an image alone does not start a deployed application.
 
 ## Experiment 15 GitHub Version Control
 
@@ -251,7 +251,7 @@ docker compose ps
 4. To publish, build with `docker build -t YOUR_DOCKER_USER/flask-todo-app:v1 .`, run `docker login`, then push that tag.
 5. Save app, container and persistence evidence. `docker compose down` retains data; `down -v` deletes the volume.
 
-Observed: application tests passed, including persistence and HTML escaping. Docker execution and publication are pending. This is a single-user loopback lab app, not a public authentication service.
+Observed: application tests passed, including persistence and HTML escaping; GitHub Actions also built and served the image successfully. A Compose restart with the named volume and registry publication remain pending. This is a single-user loopback lab app, not a public authentication service.
 
 ## Experiment 17 Push and Pull Docker Image
 
@@ -272,7 +272,7 @@ bash push-pull.sh
 
 `docker ps` lists containers and `docker images` lists local images; neither lists your remote repositories. A second container cannot bind an already-used host port.
 
-Observed: executable assets are prepared. A real registry push/pull and container run are pending.
+Observed: GitHub Actions built the image, ran it, and verified its HTTP response. A real Docker Hub push and clean pull by an authenticated account are still pending.
 
 ## Experiment 18 Multi Container App with Kubernetes
 
@@ -288,7 +288,7 @@ Nginx, Flask and MySQL run in separate Deployments. Nginx proxies API requests t
 6. Run `kubectl scale deployment/frontend --replicas=3` and wait for the rollout.
 7. Capture the response, persistent data and three Ready frontend pods.
 
-Observed: code/wiring checks passed; database contract tests use a mock. Live MySQL, cluster, persistence and scaling checks are pending. Only the frontend is exposed by NodePort.
+Observed: code/wiring checks passed; database contract tests use a mock, and GitHub Actions built and served the backend image. Live Nginx-to-Flask-to-MySQL cluster operation, persistence and scaling checks remain pending. Only the frontend is exposed by NodePort.
 
 ## Experiment 19 CI CD with GitHub Actions
 
@@ -304,7 +304,7 @@ Use the application and Dockerfile with the root workflows and [CI setup](../../
 6. Inspect the named container and health check; tunnel host loopback port 5019 to your Mac.
 7. Save actual workflow, image and deployment evidence.
 
-Observed: app tests and CI/CD assets are ready. No EC2 instance, successful hosted workflow or running deployment is claimed without execution. Use an existing lab host where available.
+Observed: the GitHub-hosted validation workflow passed, including Docker build, container start and HTTP response. The Docker Hub publication job skipped because credentials were not configured; no EC2 instance or running deployment is claimed. Use an existing lab host where available.
 
 ## Experiment 20 Create GitHub Repository
 
@@ -316,9 +316,9 @@ Observed: app tests and CI/CD assets are ready. No EC2 instance, successful host
 4. Stage, commit and push the README.
 5. Verify the repository page and latest commit.
 
-The included `scripts/publish_github.sh` creates a private new repository and uploads the extracted package using an authenticated GitHub CLI. It stops rather than replacing an existing origin or repository.
+Result: the private [csa10-software-engineering-lab repository](https://github.com/sandeep-yadav0419/csa10-software-engineering-lab) was created, all 132 prepared files were uploaded, and their remote Git blob hashes were verified. See [the publication evidence](../../evidence/github-publication.md).
 
-Consult [STATUS.md](../../STATUS.md) for the actual publication state. A local Git repository or prepared upload package alone is not proof of a GitHub upload.
+The included `scripts/publish_github.sh` remains an optional repeatable CLI route. It stops rather than replacing an existing origin or repository.
 
 ## Experiment 21 Clone and Modify Repository
 
@@ -347,7 +347,7 @@ git status
 
 Verify the remote branch's latest commit and changed README. If main is protected, use a branch and PR instead of bypassing its rules. A clean working tree alone does not prove a GitHub push.
 
-Observed: staging, committing and pushing ran against a local bare origin in the reproducible exercise. Live GitHub publication is recorded separately.
+Observed: staging, committing and pushing ran against a local bare origin in the reproducible exercise. The complete package was also committed to GitHub `main`, followed by the merged feature-login commit. See [the publication evidence](../../evidence/github-publication.md).
 
 ## Experiment 23 Pull Latest Changes
 
@@ -375,7 +375,7 @@ Observed: the two-checkout sequence ran and its changed content was asserted. Bo
 
 The full package already contains the implementation; repeating the exercise requires an incremental change before committing.
 
-Observed: valid, invalid and unknown-user tests passed, and a local feature-login branch was created, pushed and merged. A GitHub PR and peer review require separate evidence.
+Result: valid, invalid, empty, malformed and unknown-user checks passed. The real GitHub `feature-login` branch changed the implementation and tests; [PR #1](https://github.com/sandeep-yadav0419/csa10-software-engineering-lab/pull/1) passed all nine CI jobs and was squash-merged into `main`. Automated inspection was performed; no human peer review is claimed.
 
 ## Experiment 25 Fork and Implement Feature
 

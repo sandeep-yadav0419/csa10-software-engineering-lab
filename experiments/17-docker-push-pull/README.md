@@ -21,6 +21,6 @@ bash push-pull.sh
 
 `docker ps` lists containers and `docker images` lists local images; neither lists your remote repositories. A second container cannot bind an already-used host port.
 
-Observed: executable assets are prepared. A real registry push/pull and container run are pending.
+Observed: GitHub Actions built the image, ran it, and verified its HTTP response. A real Docker Hub push and clean pull by authenticated account are still pending.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

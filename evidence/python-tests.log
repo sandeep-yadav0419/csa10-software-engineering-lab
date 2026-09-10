@@ -3,6 +3,7 @@ test_status_contract_with_mock_database (test_labs.BackendTests.test_status_cont
 test_completion_percent (test_labs.FeatureTests.test_completion_percent) ... ok
 test_invalid_counts (test_labs.FeatureTests.test_invalid_counts) ... ok
 test_login (test_labs.FeatureTests.test_login) ... ok
+test_login_rejects_empty_or_nontext_credentials (test_labs.FeatureTests.test_login_rejects_empty_or_nontext_credentials) ... ok
 test_about_and_health (test_labs.FlaskEndpointTests.test_about_and_health) ... ok
 test_home_messages (test_labs.FlaskEndpointTests.test_home_messages) ... ok
 test_add_redirect_and_reload (test_labs.TodoTests.test_add_redirect_and_reload) ... ok
@@ -14,6 +15,6 @@ test_missing_task_and_read_only_get (test_labs.TodoTests.test_missing_task_and_r
 test_reject_blank_and_long_tasks (test_labs.TodoTests.test_reject_blank_and_long_tasks) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 0.337s
+Ran 15 tests in 0.420s
 
 OK

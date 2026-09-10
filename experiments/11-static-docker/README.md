@@ -17,6 +17,6 @@ docker ps --filter name=csa10-static
 
 Open the page and capture it with the running container. If port 8080 is busy, map `127.0.0.1:8011:80` and use port 8011. Stop this container using `docker stop csa10-static`; remove that stopped container before reusing the name.
 
-Expected: the page responds through Nginx. Observed: HTML and Dockerfile are prepared. Docker execution is pending because Docker is absent here.
+Result: GitHub Actions built the Nginx image, ran it, and received a successful HTTP response. A manual browser screenshot is still needed only if required for the submitted record.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

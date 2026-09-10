@@ -16,6 +16,6 @@ Nginx, Flask and MySQL run in separate Deployments. Nginx proxies API requests t
 6. Run `kubectl scale deployment/frontend --replicas=3` and wait for the rollout.
 7. Capture the response, persistent data and three Ready frontend pods.
 
-Observed: code/wiring checks passed; database contract tests use a mock. Live MySQL, cluster, persistence and scaling checks are pending. Only the frontend is exposed by NodePort.
+Observed: code/wiring checks passed; database contract tests use a mock, and GitHub Actions built and served the backend image. Live Nginx-to-Flask-to-MySQL cluster operation, persistence and scaling checks remain pending. Only the frontend is exposed by NodePort.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

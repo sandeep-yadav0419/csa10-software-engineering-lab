@@ -4,7 +4,7 @@ Prepared for Sandeep, following all 25 experiments in the supplied Software Engi
 
 Includes experiment records, requirements and an Excel workbook, 12 prototype screens with Figma generation code, tested Flask apps, Dockerfiles, Kubernetes manifests, Jenkins/GitHub Actions pipelines, and reproducible Git exercises with a real merge conflict.
 
-**Execution status:** all 25 folders contain their implementation assets and instructions. Local tests and Git exercises ran. Live Jira/Figma, registry/cluster/server operations, GitHub fork PRs and stakeholder reviews require the access described in [STATUS.md](STATUS.md). Prepared files are not claimed as completed external deployments.
+**Execution status:** all 25 folders contain their implementation assets and instructions. The private GitHub upload is verified, hosted validation passed, and the feature-login PR was merged. Live Jira/Figma, registry/cluster/server operations, fork PRs and stakeholder reviews require the access described in [STATUS.md](STATUS.md). Prepared files are not claimed as completed external deployments.
 
 ## Run on macOS
 
@@ -59,6 +59,7 @@ Open either prototype's `preview.html` directly, or serve this root with `python
 - [Requirements workbook](experiments/05-library-moscow/requirements-prioritization.xlsx)
 - [Execution status](STATUS.md)
 - [Verification evidence](evidence/verification.md)
+- [GitHub publication evidence](evidence/github-publication.md)
 - [CI and deployment setup](docs/ci-setup.md)
 - [Sources and handout corrections](docs/references.md)
 

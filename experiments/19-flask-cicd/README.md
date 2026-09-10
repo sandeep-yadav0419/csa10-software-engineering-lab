@@ -16,6 +16,6 @@ Use the application and Dockerfile with the root workflows and [CI setup](../../
 6. Inspect the named container and health check; tunnel host loopback port 5019 to your Mac.
 7. Save actual workflow, image and deployment evidence.
 
-Observed: app tests and CI/CD assets are ready. No EC2 instance, successful hosted workflow or running deployment is claimed without execution. Use an existing lab host where available.
+Observed: the GitHub-hosted validation workflow passed, including Docker build, container start and HTTP response. The Docker Hub publication job skipped because credentials were not configured; no EC2 instance or running deployment is claimed. Use an existing lab host where available.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

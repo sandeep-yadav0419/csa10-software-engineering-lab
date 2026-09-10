@@ -19,6 +19,6 @@ docker compose ps
 4. To publish, build with `docker build -t YOUR_DOCKER_USER/flask-todo-app:v1 .`, run `docker login`, then push that tag.
 5. Save app, container and persistence evidence. `docker compose down` retains data; `down -v` deletes the volume.
 
-Observed: application tests passed, including persistence and HTML escaping. Docker execution and publication are pending. This is a single-user loopback lab app, not a public authentication service.
+Observed: application tests passed, including persistence and HTML escaping; GitHub Actions also built and served the image successfully. A Compose restart with the named volume and registry publication remain pending. This is a single-user loopback lab app, not a public authentication service.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

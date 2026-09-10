@@ -16,6 +16,6 @@ Read `agent-setup.md` and configure a Pipeline from SCM job to use this experime
 6. Browse agent loopback port 5013, using an SSH tunnel if needed.
 7. Save the real stage view, console output and app screenshot.
 
-Observed: source and endpoint tests are ready. A Jenkins server and Docker agent are required for the actual pipeline run. A plain Jenkins controller container does not supply a Docker daemon.
+Observed: source tests passed, and GitHub Actions built and served this Docker image successfully. A Jenkins server and Docker agent are still required for the literal Jenkins pipeline run. A plain Jenkins controller container does not supply a Docker daemon.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

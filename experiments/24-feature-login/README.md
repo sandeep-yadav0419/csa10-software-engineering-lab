@@ -16,6 +16,6 @@ Implement a login function on a feature-login branch.
 
 The full package already contains the implementation; repeating the exercise requires an incremental change before committing.
 
-Observed: valid, invalid and unknown-user tests passed, and a local feature-login branch was created, pushed and merged. A GitHub PR and peer review require separate evidence.
+Result: valid, invalid, empty, malformed and unknown-user checks passed. The real GitHub `feature-login` branch changed the implementation and tests; [PR #1](https://github.com/sandeep-yadav0419/csa10-software-engineering-lab/pull/1) passed all nine CI jobs and was squash-merged into `main`. Automated inspection was performed; no human peer review is claimed.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

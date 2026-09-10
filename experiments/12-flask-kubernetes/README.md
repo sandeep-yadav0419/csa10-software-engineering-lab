@@ -15,6 +15,6 @@ The API exposes `/`, `/about` and `/health`. The Deployment uses two replicas an
 5. Portable alternative: `kubectl port-forward service/flask-api-service 5012:5000`, then browse port 5012.
 6. Capture both endpoints, two Ready pods and the service output.
 
-Observed: endpoint tests and manifest checks passed. Actual container and cluster execution are pending. Local image names must be published/replaced for a remote cluster.
+Observed: endpoint and manifest checks passed, and GitHub Actions built and served the Docker image successfully. An actual Kubernetes rollout, two-Ready-pod evidence, and NodePort/port-forward capture remain pending. Local image names must be published or replaced for a remote cluster.
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)

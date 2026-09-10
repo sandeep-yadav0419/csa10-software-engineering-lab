@@ -17,6 +17,6 @@ git status
 
 Verify the remote branch's latest commit and changed README. If main is protected, use a branch and PR instead of bypassing its rules. A clean working tree alone does not prove a GitHub push.
 
-Observed: staging, committing and pushing ran against a local bare origin in the reproducible exercise. Live GitHub publication is recorded separately.
+Observed: staging, committing and pushing ran against a local bare origin in the reproducible exercise. The complete package was also committed to GitHub `main`, followed by the merged feature-login commit. See [the publication evidence](../../evidence/github-publication.md).
 
 [All experiments](../../README.md) · [Execution status](../../STATUS.md)
